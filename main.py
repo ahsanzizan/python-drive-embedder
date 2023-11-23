@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     # Tweak the link to https://drive.google.com/uc?export=view&id=[id]
     tweaked_link = f'https://drive.google.com/uc?export=view&id={content_id}'
-    print(tweaked_link)
+    print(f'URL: {tweaked_link}')
 
     wb.open(tweaked_link)
 
