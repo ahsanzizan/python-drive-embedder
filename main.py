@@ -12,7 +12,7 @@ if __name__ == "__main__":
     content_id = split_link[5]
 
     # Tweak the link to https://drive.google.com/uc?export=view&id=[id]
-    tweaked_link = f'https://drive.google.com/uc?export=view&id={content_id}'
+    tweaked_link = f'https://lh3.google.com/u/0/d/{content_id}'
     print(f'URL: {tweaked_link}')
 
     wb.open(tweaked_link)
