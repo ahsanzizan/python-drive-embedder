@@ -11,7 +11,7 @@ if __name__ == "__main__":
     # ['https:', '', 'drive.google.com', 'file', 'd', '[id]', 'view?usp=drive_link']
     content_id = split_link[5]
 
-    # Tweak the link to https://drive.google.com/uc?export=view&id=[id]
+    # Tweak the link to https://lh3.google.com/u/0/d/[id]
     tweaked_link = f'https://lh3.google.com/u/0/d/{content_id}'
     print(f'URL: {tweaked_link}')
 
