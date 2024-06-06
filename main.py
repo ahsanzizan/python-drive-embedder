@@ -2,7 +2,7 @@
 
 import webbrowser as wb
 import pyperclip as clip
-import datetime as dt
+from datetime import datetime as dt
 
 if __name__ == "__main__":
     print("The content must have a valid ID and must have public access")
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     with open("history.txt", "a+") as history:
         now = dt.now()
         stringified_now = now.strftime("%d/%m/%y %H:%M:%S")
-        history.write(stringified_now, ":", tweaked_link)
+        history_text = stringified_now + " : " + tweaked_link
+        history.write(history_text)
 
     wb.open(tweaked_link)
-
