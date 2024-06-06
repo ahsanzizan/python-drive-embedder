@@ -20,7 +20,7 @@ if __name__ == "__main__":
     clip.copy(tweaked_link)
     print(f'URL: {tweaked_link}')
 
-    with open("history.txt", "a") as history:
+    with open("history.txt", "a+") as history:
         now = dt.now()
         stringified_now = now.strftime("%d/%m/%y %H:%M:%S")
         history.write(stringified_now, ":", tweaked_link)
